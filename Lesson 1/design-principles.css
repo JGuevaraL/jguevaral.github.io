@@ -1,0 +1,91 @@
+header {
+    min-height: 4.5rem;
+    text-align: center;
+}
+
+#home-button {
+    background-color: var(--primary-color);
+    border: 2px solid var(--heading-on-color);
+    height: 2.5rem;
+    width: 5rem;
+    margin: 13px;
+    align-self: center;
+}
+
+.fa-house {
+    color: var(--heading-on-color);
+}
+
+/* Main */
+main {
+    margin: 0;
+}
+/* Small View: */
+#main-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.principle-section {
+    background-color: white;
+    border: 2px solid var(--heading-on-color);
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+    line-height: 1em;
+}
+section hr {
+    width: 80%;
+}
+
+.principle-name {
+    color: var(--regular-text);
+}
+
+.company-link{
+    text-decoration: none;
+}
+
+section img {
+    max-width: 90%;
+    margin: 10px;
+    border: 1px solid var(--heading-on-color);
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgb(156, 155, 154);
+}
+
+.description {
+    text-align: left;
+    font-size: 16px;
+    margin: 25px;
+}
+
+
+@media (min-width: 34.4em) { 
+    #home-button {
+        float: right;
+    }
+    #main-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    #third-principle-section {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 60em) {
+    
+    #main-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #first-principle-section {
+        grid-column: 1 / 2;
+    }
+    #second-principle-section {
+        grid-column: 2 / 3;
+    }
+    #third-principle-section {
+        grid-column: 3 / 4;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Color Scheme</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;family=Cutive+Mono&amp;family=Shadows+Into+Light&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/color_scheme.css" />
+    <link rel="stylesheet" href="CSS/target-audience.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+  </head>
+
+  <body>
+    <header>
+      <div class="cloud_top">
+        <h1>
+          Weather Project<br /><span class="byline">Planning Document</span>
+        </h1>
+      </div>
+
+      <div id="header_links">
+        <div id="nav">
+          <nav >
+            <ul id="menu">
+              <li><a href="index.html">Main</a></li>
+              <li><a href="target-audience.html">Target Audience</a></li>
+              <li><a href="color-scheme.html">Color Scheme</a></li>
+              <li><a href="typography.html">Typography</a></li>
+            </ul>
+          </nav>
+        </div>
+        <br />
+      </div>
+    </header>
+    <main>
+      <h1>Color Palette</h1>
+      <p>
+        The color scheme will be based upone the below gradient color chart.
+      </p>
+      <img
+        id="color_scheme"
+        src="images/color_scheme.webp"
+        alt="Color Scheme"
+      />
+      <ul>
+        <li><span id="header_cs">Header|Footer: #023E8A </span></li>
+        <li><span id="background_cs">Background: #CAF0F8 </span></li>
+        <li><span id="accent_cs">Accent colors: #00B4D8 </span></li>
+      </ul>
+    </main>
+
+    <footer>
+        <p>
+          &copy;<span id="currentYear"></span> |
+          <a href="https://github.com/JGuevaraL">Jorge Guevara</a> | Peru |
+          <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </p>
+        <p id="lastUpdate">Last modified</p>
+        <script defer src="js/dates.js"></script>
+      </footer>
+  </body>
+</html>

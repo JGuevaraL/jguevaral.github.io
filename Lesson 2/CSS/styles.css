@@ -1,0 +1,101 @@
+html {
+    background-color: var(--primary-color);
+  }
+  
+  :root {
+    --primary-color: grey;
+    --secondary-color: #827c7c;
+  }
+  
+  header,
+  footer {
+    background-color: rgba(100, 50, 25, 1);
+    padding: 5px;
+    color: white;
+    border: black solid 2px;
+    text-align: center;
+  }
+  
+  body {
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: auto;
+  }
+  
+  main {
+    border-bottom: 2px solid black;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: black solid 2px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-right: 35px;
+  }
+  
+  h2 {
+    font-size: 1.1em;
+  }
+  
+  ul {
+    list-style: square;
+  }
+  
+  footer a,
+  footer a:visited,
+  li a:visited {
+    color: lightskyblue;
+  }
+  
+  nav {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    background-color: #373737;
+    transition: 0.5s;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  nav ul.open {
+    display: block;
+  }
+  
+  nav a:hover {
+    background-color: #f2f3ae;
+    color: #36454f;
+  }
+
+  @media only screen and (min-width: 42rem) {
+  
+    nav ul#menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      font-size: 0.8rem;
+      padding: 10px;
+    }
+  
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0);
+    }
+  }
